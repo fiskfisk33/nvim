@@ -1,3 +1,1 @@
-require("tehfisk")
-
-
+require("fisk")
