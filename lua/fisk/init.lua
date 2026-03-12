@@ -9,13 +9,12 @@ vim.bo.shiftwidth = 4 -- size of an indentation (sw).
 vim.bo.expandtab = true -- always uses spaces instead of tab characters (et).
 vim.bo.softtabstop = 4 -- number of spaces a <Tab> counts for. When 0, feature is off (sts).
 
-require("fisk.bootstrapLazy")
+require("fisk.bootstraplazy")
 require("fisk.lazy")
 require("fisk.colorscheme")
 require("fisk.fzf")
 require("fisk.lsp")
 require("fisk.floatterm")
-require("fisk.sonarqube")
 require("fisk.unified")
 require("fisk.gitsigns")
 

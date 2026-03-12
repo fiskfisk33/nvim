@@ -38,12 +38,6 @@ require("lazy").setup({
         end
     },
     {
-        "iamkarasik/sonarqube.nvim",
-        config = function()
-          require("sonarqube").setup({})
-        end
-    },
-    {
         "FabijanZulj/blame.nvim",
         lazy = false,
         config = function()
