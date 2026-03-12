@@ -32,9 +32,9 @@ vim.opt.splitbelow = true
 
 --undohistory
 vim.opt.undofile = true
-vim.opt.backupdir = "~/.vimtmp//,."
-vim.opt.undodir = "~/.vimtmp//,."
-vim.opt.directory = "~/.vimtmp//"
+vim.opt.backupdir = os.getenv("HOME").."/.vimtmp//,."
+vim.opt.undodir = os.getenv("HOME").."/.vimtmp//,."
+vim.opt.directory = os.getenv("HOME").."/.vimtmp//"
 
 require('mini.trailspace').setup()
 
