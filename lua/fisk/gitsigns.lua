@@ -1,4 +1,5 @@
 require('gitsigns').setup{
+  attach_to_untracked = true,
   on_attach = function(bufnr)
     local gitsigns = require('gitsigns')
 
@@ -41,6 +42,8 @@ require('gitsigns').setup{
     -- map('n', '<leader>hR', gitsigns.reset_buffer)
     -- map('n', '<leader>hp', gitsigns.preview_hunk)
     map('n', '<leader>gp', gitsigns.preview_hunk_inline)
+    map('n', '<leader>gs', gitsigns.stage_hunk)
+    map('n', '<leader>gu', gitsigns.undo_stage_hunk)
 
     -- map('n', '<leader>hb', function()
     --   gitsigns.blame_line({ full = true })
