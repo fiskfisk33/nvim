@@ -1,7 +1,14 @@
+
+local gitsigns = require('gitsigns')
+local function changebase(callback)
+  vim.ui.input({prompt = "change GIT base"}, function(input)
+    gitsigns.change_base(input, true, callback)
+  end)
+end
+
 require('gitsigns').setup{
   attach_to_untracked = true,
   on_attach = function(bufnr)
-    local gitsigns = require('gitsigns')
 
     local function map(mode, l, r, opts)
       opts = opts or {}
@@ -44,7 +51,7 @@ require('gitsigns').setup{
     map('n', '<leader>gp', gitsigns.preview_hunk_inline)
     map('n', '<leader>gs', gitsigns.stage_hunk)
     map('n', '<leader>gu', gitsigns.undo_stage_hunk)
-
+    map('n', '<leader>gb', changebase)
     -- map('n', '<leader>hb', function()
     --   gitsigns.blame_line({ full = true })
     -- end)
@@ -65,4 +72,5 @@ require('gitsigns').setup{
     -- Text object
     -- map({'o', 'x'}, 'ih', gitsigns.select_hunk)
   end
+
 }
