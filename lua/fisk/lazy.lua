@@ -1,5 +1,6 @@
 require("lazy").setup({
   spec = {
+    'nvim-treesitter/nvim-treesitter-context',
     'axkirillov/unified.nvim',
     "voldikss/vim-floaterm",
       -- import your plugins
