@@ -17,6 +17,8 @@ require("fisk.lsp")
 require("fisk.floatterm")
 require("fisk.unified")
 require("fisk.gitsigns")
+require("fisk.treesitter")
+require("fisk.treesittercontext")
 
 require("fisk.keymap")
 
