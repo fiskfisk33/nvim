@@ -40,7 +40,6 @@ vim.lsp.enable({
 	'luals',
 	'elp',
 	'basedpyright',
-  'sonarlint',
 })
 
 --LSP keymappings--

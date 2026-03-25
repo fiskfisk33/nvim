@@ -49,6 +49,7 @@ require('gitsigns').setup{
     -- map('n', '<leader>hR', gitsigns.reset_buffer)
     -- map('n', '<leader>hp', gitsigns.preview_hunk)
     map('n', '<leader>gp', gitsigns.preview_hunk_inline)
+    map('n', '<leader>gr', gitsigns.reset_hunk)
     map('n', '<leader>gs', gitsigns.stage_hunk)
     map('n', '<leader>gu', gitsigns.undo_stage_hunk)
     map('v', '<leader>gr', function()
