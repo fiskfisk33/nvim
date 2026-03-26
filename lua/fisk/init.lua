@@ -38,6 +38,7 @@ vim.opt.undodir = os.getenv("HOME").."/.vimtmp//,."
 vim.opt.directory = os.getenv("HOME").."/.vimtmp//"
 
 require('mini.trailspace').setup()
+MiniTrailspace.unhighlight()
 
 --vim.opt.colorcolumn = '80'
 vim.api.nvim_create_autocmd({'WinEnter', 'VimEnter'}, {
